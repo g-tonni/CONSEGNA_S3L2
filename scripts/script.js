@@ -133,17 +133,30 @@ const revealFooterLink = function () {}
     */
 
 const area = document.getElementById('tableArea')
+const info = [
+  ['Giada', 'Tonni', '23', 'Roma'],
+  ['Giorgia', 'Bianchi', '24', 'Milano'],
+  ['Diego', 'Rossi', '19', 'Verona'],
+  ['Prisca', 'Verdi', '12', 'Roma'],
+  ['Sami', 'Neri', '31', 'Bologna'],
+]
+const table = document.createElement('table')
 
-const generateTable = function (area, nR, nD) {
-  const table = document.createElement('table')
-  area.innerHTML = 'table'
+const generateTable = function (nR, nD, lista) {
   for (let i = 0; i < nR; i++) {
     const tr = document.createElement('tr')
     for (let j = 0; j < nD; j++) {
       const td = document.createElement('td')
+      td.innerText = lista[i][j]
+      tr.appendChild(td)
     }
+    table.appendChild(tr)
   }
 }
+
+area.appendChild(table)
+console.log(area)
+generateTable(5, 4, info)
 
 /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
