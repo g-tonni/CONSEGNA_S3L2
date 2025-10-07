@@ -134,11 +134,11 @@ const revealFooterLink = function () {}
 
 const area = document.getElementById('tableArea')
 const info = [
-  ['Giada', 'Tonni', '23', 'Roma'],
-  ['Giorgia', 'Bianchi', '24', 'Milano'],
-  ['Diego', 'Rossi', '19', 'Verona'],
-  ['Prisca', 'Verdi', '12', 'Roma'],
-  ['Sami', 'Neri', '31', 'Bologna'],
+  ['Immagine', 'Shampoo', '23', '20 €'],
+  ['Immagine', 'Balsamo', '24', '10 €'],
+  ['Immagine', 'Crema', '19', '13 €'],
+  ['Immagine', 'Maschera', '12', '3 €'],
+  ['Immagine', 'Bagnoschiuma', '31', '8 €'],
 ]
 const table = document.createElement('table')
 
